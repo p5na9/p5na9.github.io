@@ -1,0 +1,276 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+ }
+ 
+ /* ---------------------------- */
+/* 레이아웃 배경 */        
+ div#wrap { background:#ffe; }
+ header#header {background:#ddf; }
+ nav#nav { background:#dfd; }
+.container{background: #fdd;}
+footer#footer { background:#ddf;}
+
+.home-content, 
+.interest-content, 
+.roadMap-content,
+.login_join-content
+{ background:#ffe;
+  border-radius: 5%; }
+
+
+ /* padding */
+  header#header, 
+  nav#nav,
+ footer#footer
+{ padding:20px; }
+
+/* font */
+.home-content, .interest-content{
+    font-family: 'Noto Sans Mono', monospace;
+}
+#home-content1{
+  font-size: 1.1rem;
+}
+section#container::after { content:""; display:block; clear:both; }
+ .container{
+    padding: 50px;
+ }
+ #header{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #header h1{
+     font-size: 3em;
+     font-family: 'Rubik', sans-serif;
+     padding-top: 5px;
+     color: #000;
+     text-shadow: -5px 0 #fff, 0 5px #fff, 5px 0 #fff, 0 -5px #fff;
+ }
+
+
+/* nav, footer 위치 정렬  */
+nav{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end; /*nav는 오른쪽 끝*/
+     font-family: 'Rubik', sans-serif;
+     font-size:1.2rem;
+    }
+
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+      /* footer는 중간 */
+    align-items:center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+
+nav#nav ul,footer#footer ul {
+    padding: 0; 
+    margin: 0; 
+    list-style:none; 
+    
+}
+
+
+/* nav간 간격 margin으로 조절 */
+nav#nav ul li {
+    margin-right: 2rem; 
+    background:#ffe; 
+    border-radius: 20%;
+    padding: 10px; 
+    display:inline-block; 
+    border-right: 4px solid #ddf;
+    border-bottom: 4px solid #ddf;
+}
+#nav li:hover{
+    background: #fdd;
+    border-radius: 20%;
+}
+footer#footer ul li {
+     margin: 1rem;
+     padding: 10px;
+     display:inline-block; 
+}
+
+
+/* 고양이 img */
+/* .home-content img{
+    width: 30%;
+    padding: 4rem 1rem 0 1rem;
+    display: flex;
+    float: left;
+    margin-right: 1rem;
+} */
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+/* 소제목 */
+.home-content h1,
+.interest-content h1, 
+.roadMap-content h1,
+.login_join-content h1
+{
+    margin-left: 1rem;
+    color:rgb(92, 91, 91);
+    font-size: 2.2rem;
+    display: inline-block;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+/* 냥발자국 색 */
+article i{
+    color:rgb(255, 147, 147);
+    font-size: 30px;
+}
+
+
+/* 수평선 색 */
+hr{
+    border:0;
+    height:5px;
+    background: #fdd;
+    margin: 30px 0px;
+}
+.home fieldset{
+    border: 4px solid #fdd;
+    padding: auto;
+    margin: 20px;
+    
+}
+.home table{
+    margin:10px;
+    border-spacing: 20px;
+    /* border: 2px solid salmon */
+}
+#home-content3{
+    font-size: 1.2rem;
+}
+#home-content3 p:nth-child(2){
+    color:rgb(255, 147, 147);
+    font-weight: 700;
+}
+
+.home aside{
+  width: 15%;
+  position: fixed;
+  height: 44%;
+  top: 300px;
+  left: 43px;
+  border-radius: 10%;
+  font-family: 'Rubik', sans-serif;
+  background-color: lightcyan;
+}
+
+/* -----------------크기조정----------------- */
+.info-box {
+    top: 113px;
+    min-height: calc(100% - 50px);
+    width: 100%;
+    text-align: center;
+ }
+ article{
+    margin: auto;
+}
+.home-content,  .interest-content, .roadMap-content, .login_join-content {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1000px;
+   max-width: 100%;
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+}
+
+.home-image, .interest-image, .roadMap-image, .login_join-image {
+   max-width: 100%;
+}
+.roadMap-image{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+}
+.home-text, .interest-text,  .roadMap-text, .login_join-text{
+   width: 500px;
+   max-width: 100%;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+
+/* 애니메이션 */
+ /* 0.5 초씩 바운스 효과 */
+ #cat1, #donut1, #music1 { 
+    position: relative;
+    padding-top: 20px;
+    animation: bounce 0.7s infinite linear;
+  }
+
+  /* 
+    바운스의 높이 
+    0% 일 때, 0px 
+    50%일 때, -5px 
+    70%일 때, -50px
+    100%일 때, 0px 
+    */
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -5px;
+    }
+
+    70% {
+      top: -25px;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  
+  #header h1:hover {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: shake
+  }
+  
+
+  @keyframes shake {
+    0%, 100% {
+      transform: translate3d(0, 0, 0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(-10px, 0, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(10px, 0, 0)
+    }
+  }
+  

@@ -1,0 +1,119 @@
+
+html{
+   background-color: #ffe;
+}
+.wrapper{
+   max-width: 600px;
+   border: none;
+   padding: 20px;
+   text-align: center;
+   align-items: center;
+   background-color: #fff;
+   border: 8px solid #ddf;
+   border-radius: 3px;
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+p{
+   font-size: 3em;
+   font-family: 'Rubik', sans-serif;
+   padding-top: 5px;
+   color: #000;
+   text-shadow: -1px 0 rgb(176, 176, 255), 0 -1px rgb(176, 176, 255), 4px 0 rgb(176, 176, 255), 0 -1px rgb(176, 176, 255);
+}
+
+.wrapper input{
+   margin-bottom: 10px;
+   background-color: #fff;
+   height: 37px;
+   padding: 10px 10px;
+   box-sizing: border-box;
+   border: 1px solid #ddf;
+   border-radius: 4px;
+}
+
+.wrapper input::placeholder{
+   font-size: 0.8rem;
+   font-weight:100;
+}
+
+.wrapper input:focus {
+   outline:none;
+   border: 5px solid #ddf;
+   border-radius: 4px;
+}
+
+/* login글자 */
+.Login {
+   height: 37px;
+   margin-bottom: 10px;
+   box-sizing: border-box;
+   border: 0px;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 15px;
+   font-weight: 500;
+   font-family: 'Rubik', sans-serif;
+}
+
+/* Login 버튼 */
+.unactivatedColor {
+   background-color: #ddf;
+}
+.activatedColor {
+   background-color: rgb(161, 161, 253);
+}
+
+.LoginColor {
+   background-color: #00aeff;
+}
+
+.loginWindow * {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.inlineBlock {
+   display: block;
+}
+
+/* 정보 입력구간 */
+table, th, td{
+   margin-left: auto; margin-right: auto;
+   /* border: 1px solid black; */
+}
+th {
+   font-family: 'IBM Plex Sans KR', sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #333333;
+   text-align: end;
+}
+td{
+   margin-left: 0;
+}
+
+/* 크기 조정 */
+#userName, #userId, #pwd, #pwdCheck, #email{
+   width: 80%;
+}
+/* 가입하세여 */
+.haveAccount p a{
+   color: #248ae3;
+   font-family: 'IBM Plex Sans KR', sans-serif;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+button{
+   border: none;
+}
+.noneunderline {
+   text-decoration:none;
+}
+fieldset{
+   border: 4px solid #ddf;
+}

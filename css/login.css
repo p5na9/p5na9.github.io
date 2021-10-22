@@ -1,0 +1,155 @@
+
+html{
+    background-color: #ffe;
+}
+.wrapper{
+    margin: 90px auto;
+    max-width: 340px;
+    border: none;
+    padding: 20px;
+    text-align: center;
+}
+
+/* loginWindow */
+.loginWindow {
+    background-color: #fff;
+    padding: 10px auto;
+    border: 5px solid #ddf;
+    border-radius: 10%;
+}
+
+.loginWindow input{
+    margin-bottom: 20px;
+    background-color: #fff;
+    height: 37px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddf;
+    border-radius: 4px;
+}
+
+.loginWindow input::placeholder{
+    font-size: 0.8rem;
+    font-weight:100;
+}
+
+.loginWindow input:focus {
+    outline:none;
+    border: 5px solid #ddf;
+    border-radius: 4px;
+}
+
+/* login글자 */
+.Login {
+    height: 37px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Login 버튼 */
+.unactivatedLoginColor {
+    background-color: #ddf;
+}
+.activatedLoginColor {
+    background-color: rgb(161, 161, 253);
+}
+
+.LoginColor {
+    background-color: #00aeff;
+}
+
+.loginWindow * {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hi Yeon */
+#Logo {
+    font-size: 3em;
+    font-family: 'Rubik', sans-serif;
+    padding-top: 5px;
+    color: #000;
+    text-shadow: -1px 0 rgb(176, 176, 255), 0 -1px rgb(176, 176, 255), 4px 0 rgb(176, 176, 255), 0 -1px rgb(176, 176, 255);
+}
+
+.inlineBlock {
+    display: block;
+}
+
+/* 또는 */
+.leftHr {
+    float:left;
+    width:35%;
+    box-sizing: border-box;
+}
+
+.or{
+    float:left;
+    width:17%;
+    margin:2px 5%;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 700;
+    margin:0px 15px;
+}
+
+.rightHr {
+    float: right;
+    width:35%;
+    box-sizing: border-box;
+    
+}
+
+/* 페이스북으로 로그인 */
+.facebookLogin {
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 37px;
+    box-sizing: border-box;
+    border: 0px;
+    border-radius: 5px;
+    color: #141272;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+/* 계정이 없나여?*/
+.haveAccount {
+   
+    background-color: #ddf;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddf;
+    border-radius: 5%;
+}
+
+.haveAccount p {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 550;
+    color: #333333;
+}
+
+/* 가입하세여 */
+.haveAccount p a{
+    color: #248ae3;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.noneunderline {
+    text-decoration:none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <link rel="stylesheet" href="../JangHiyeon/css/create_account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Orbitron:wght@700&family=Rubik:ital,wght@1,500&family=Russo+One&family=Timmana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+    <div class="wrapper">
+    <form action="javascript:alert('회원가입 완료!');" name="memberFrm">
+        <table>
+            <p>Create a New Account !</p>
+            <tr>
+                <th>Name</th>
+                <td>
+                    <input type="text" name="userName" id="userName">
+                </td>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <td>
+                    <input type="text" name="userId" id="userId">
+                </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password" name="pwd" id="pwd">
+                </td>
+            </tr>
+            <!-- <tr>
+                <th>Confirm password </th>
+                <td>
+                    <input type="password" id="pwdCheck">
+                </td>
+            </tr> -->
+            <tr>
+                <th>E-Mail</th>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>
+                    <div class="birth">
+                        <input type="text" id="birth_year">
+                        <span>년</span>
+                        <select name="birth_month" id="birth_month">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <span>월</span>
+                        <input type="text" id="birth_day">
+                        <span>일</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+    
+                    <fieldset class="gender-form">
+                        <input type="radio" id="gender-type-1" name="gender-type-1" value="Male">
+                        <label for="gender-male" class="gender-radio">Male</label>
+    
+                        <input type="radio" id="gender-type-2" name="gender-type-2" value="Female">
+                        <label for="gender-female" class="gender-radio">Female</label>
+    
+                        <input type="radio" id="gender-type-3" name="gender-type-3" value="Non-binary">
+                        <label for="gender-non-binary" class="gender-radio">Non-binary</label>
+                        
+                    </fieldset>
+                    <br>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2" class="btn-wrapper">
+                    <button class=" JOIN unactivatedColor">JOIN</button>
+                </td>
+            </tr> -->
+        </table>
+    </form>
+</div>

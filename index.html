@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../JangHiyeon/css/01_home.css">
+    <link rel="stylesheet" href="../JangHiyeon/css/02_music.css">
+    <link rel="stylesheet" href="../JangHiyeon/css/03_roadMap.css">
+    <link rel="stylesheet" href="../JangHiyeon/css/04_login&join.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Orbitron:wght@700&family=Rubik:ital,wght@1,500&family=Russo+One&family=Timmana&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;500&display=swap" rel="stylesheet">
+
+    <!-- 한글 -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <title>HOME</title>
+    <script src="https://kit.fontawesome.com/4123702f4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="displayGuestbook();">
+    <header class="home-link" id="header">
+        <a href="#">
+        <h1 >
+            HI YEON
+            <i class="fas fa-music"></i>
+        </h1>
+        </a>    
+    </header>
+    <nav id="nav">
+        <ul>
+            <li class="home-link"><a href="#">Home</a></li>
+            <li class="interest-link"><a href="#">Music</a></li>
+            <li class="roadMap-link"><a href="#">Roadmap</a></li>
+            <li class="login_join-link"><a href="#">login</a></li>
+        </ul>
+
+    </nav>
+    <section class="home container">
+        <div class="info-box home">
+            <div class="home-content">
+                <!-- <img src="../JangHiyeon/img/kitty.png" alt=""> -->
+                <article class="home-text">
+                    <h1>ABOUT ME</h1>
+                    <i class="fas fa-paw"></i>
+                    <br>
+                    <div id="home-content1">
+                        <p>Name: Jang Hiyeon</p>
+                        <p>Age: 22</p>
+                        <fieldset>
+                            <legend>Hobby</legend>
+                            <p>Walking with Music</p>
+                            <p>Tapestry weaving</p>
+                            <p>Making scones</p>
+                            <p>Reading poems</p>
+                        </fieldset>
+                    </div>
+                    <br>
+                    <hr>
+                    <h1>Random Facts about Me</h1>
+                    <i class="fas fa-paw"></i>
+                    <div id="home-content2">
+                        <table>
+                            <h2>I love..</h2>
+                            <tr>
+                                <th>Cat</th>
+                                <th>Food</th>
+                                <th>Music</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../JangHiyeon/img/001-animals.png" id="cat1" alt="">
+                                </td>
+                                <td>
+                                    <img src="../JangHiyeon/img/002-donut.png" id="donut1" alt="">
+                                </td>
+                                <td>
+                                    <img src="../JangHiyeon/img/004-musical-notes.png" id="music1" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Especially,<br> I like cheese tabi.</td>
+                                <td>Almost all foods.</td>
+                                <td>My favorite one is R&B.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <hr>
+                    <h1>My favorite quote</h1>
+                    <i class="fas fa-paw"></i>
+                    <div id="home-content3">
+                        <div class="col-md-7" data-aos="fade-up">
+                            <p>"I'm a slow walking person.</p>
+                            <p> But </p>
+                            <p>it never goes back."</p>
+                            <p>-Abraham Lincoln-</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </section>
+    </div>
+    <section class="interest container" onload="displayGuestbook();">
+        <div class="info-box interest">
+            <div class="interest-content">
+                <article class="interest-text">
+                    <h1>Music</h1>
+                    <i class="fas fa-paw"></i>
+                    <div class="singer1">
+                        <a name="singer-1">
+                            <br>
+                            <fieldset>
+                                <legend id="number">1</legend>
+                            </fieldset>
+                            <h2 id="singer1-name"> Baek Yerin</h2>
+                            <div class="avatar">
+                                <img src="../JangHiyeon/img/e616be27cd724ac8ad1eee0da3c7e302 (1).jpg" alt="">
+                            </div>
+                            <h3>1. Antifreeze</h3>
+                            <audio src="../JangHiyeon/music/Antifreeze-백예린.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p id="korean">니가 건네주는 커피 위에 살얼음이 떠도<br>
+                                우리 둘은 얼어붙지 않을 거야.</p>
+                            <h3>2.square</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - 백예린 Yerin Baek  Square 2017 Official Lyric Video.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>You're the only one, who saw my yesterday<br>
+                                the one who knows I'm here alive today</p>
+                            <h3 id="korean">3.내가 날 모르는 것처럼</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - 내가 날 모르는 것처럼 Feat 카더가든 I Dont Know Feat Car the garden.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p id="korean">I don’t know 나를 알면 알 수록 <br>
+                                You don’t know 나도 모르겠는 것처럼</p>
+                        </a>
+                    </div>
+                    <div class="singer2">
+                        <a name="singer-2">
+                            <br>
+                            <fieldset>
+                                <legend id="number">2</legend>
+                            </fieldset>
+                            <h2 id="singer2-name">Jin Ah Kwon</h2>
+                            <div class="avatar">
+                                <img src="../JangHiyeon/img/권진아.png" alt="">
+                            </div>
+                            <div id="korean">
+                                <h3>1. 시계 바늘</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - 권진아  시계 바늘  가사.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>뜨거운 정오
+                                    아련한 오후<br>
+                                    서늘했던 저녁이 지나가고<br>
+                                    나란했었던 시계바늘이<br>
+                                    둘이 되어 멀어지고 있잖아
+                                </p>
+                                <h3>2. 마음이 그래</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - 개코 권진아  마음이 그래  가사.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>가만히 가라앉아있던 마음을 꺼내 보지 않으면<br>
+                                    우리도 우리 마음을 속이면서 사니까</p>
+                                <h3>3. 운이 좋았지</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - 권진아Kwon Jin Ah운이 좋았지I got lucky.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>나는 운이 좋았지<br>
+                                    내 삶에서 나보다도
+                                    사랑한 사람이 있었으니</p>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="singer3">
+                        <a name="singer-3">
+                            <br>
+                            <fieldset>
+                                <legend id="number">3</legend>
+                            </fieldset>
+                            <h2 id="singer3-name">Niki</h2>
+                            <div class="avatar">
+                                <img src="../JangHiyeon/img/niki.jpg" alt="">
+
+                            </div>
+                            <h3>1. lowkey</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - NIKI  lowkey Official Visualizer.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>This liquid courage got me way too honest
+                            </p>
+                            <h3>2. Indigo</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - Indigo.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>You know I'm your type, right?<br>
+                                Mark your calendar,<br>
+                                tonight's gonna be your life's highlight</p>
+                            <h3>3. move!</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - NIKI  Move 한글자막가사.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>Already got me so addicted, say I'm bluffin'<br>
+                                There's somethin' in the way you make me<br>
+                                Move!
+                        </a>
+                    </div>
+                    <div class="singer4">
+                        <a name="singer-4">
+                            <br>
+                            <fieldset>
+                                <legend id="number">4</legend>
+                            </fieldset>
+                            <h2 id="singer4-name">Keshi</h2>
+                            <div class="avatar">
+                                <img src="../JangHiyeon/img/keshi.jpg" alt="">
+
+                            </div>
+                            <h3>1. summer</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - keshi  summer 가사해석번역한글자막.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>Kiss my wounds but, not forever
+                            </p>
+                            <h3>2. drunk</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - keshi  drunk Audio.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>All my friends are drunk again<br>
+                                And I'm stumblin' back to bed all by myself
+                            </p>
+                            <h3>3. skeleton</h3>
+                            <audio src="../JangHiyeon/music/y2mate.com - keshi  skeletons lyric video.mp3" controls loop
+                                preload="metadata"></audio>
+                            <p>Feel bad, go to bed<br>
+                                Wake up even worse yea
+                            </p>
+                        </a>
+                    </div>
+                    <div class="singer5">
+                        <a name="singer-5">
+                            <br>
+                            <fieldset>
+                                <legend id="number">5</legend>
+                            </fieldset>
+                            <h2 id="singer5-name">CHEEZE</h2>
+                            <div class="avatar">
+                                <img src="../JangHiyeon/img/cheeze.jpg" alt="">
+
+                            </div>
+                            <div id="korean">
+                                <h3>1. 퇴근시간</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - Quitting time 퇴근시간.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>웃는 내 모습이 좋다면 슬픈 나도 좋아해 줘요<br>
+                                    난 그대 우는 모습도 좋거든요
+                                </p>
+                                <h3>2. 깊이 아래로</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - CHEEZE  치즈  Q album 03 깊이 아래로 Official Music.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>니 생각에 잠길 때면<br>
+                                    더 깊이 아래로<br>
+                                    깊이 아래로 무거워져요
+                                </p>
+                                <h3>3. Everything to</h3>
+                                <audio src="../JangHiyeon/music/y2mate.com - 치즈  CHEEZE  Everything to Official Audio.mp3" controls loop
+                                    preload="metadata"></audio>
+                                <p>난 매일 궁금해 넌 뭐가 그리 좋을까<br>
+                                    만약 나 사라지면 슬퍼하면 좋겠어
+                                </p>
+
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <!-- 사이드바 -->
+                <aside >
+                    <div id="aside-color1">
+                        <a href="#singer-1">
+                            <p>YERIN BAEK</p>
+                        </a>
+                    </div>
+                    <div id="aside-color2">
+                        <a href="#singer-2">
+                            <p>JIN Ah KWON</p>
+                        </a>
+                    </div>
+                    <div id="aside-color3">
+                        <a href="#singer-3">
+                            <p>NIKI</p>
+                        </a>
+                    </div>
+                    <div id="aside-color4">
+                        <a href="#singer-4">
+                            <p>KESHI</p>
+                        </a>
+                    </div>
+                    <div id="aside-color5">
+                        <a href="#singer-5">
+                            <p>CHEEZE</p>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+    </section>
+    <!-- 로드맵 페이지 -->
+    <section class="roadMap container">
+        <div class="info-box roadMap">
+            <div class="roadMap-content">
+                <article class="roadMap-text">
+                    <h1>
+                        <a name="past">
+                        </a>
+                        Road Map
+                    </h1>
+                    <i class="fas fa-paw"></i>
+                    <ul class="sessions" >
+                        <li >
+                            <time>About ten years ago...</time>
+                            <div class="balloon">
+                                응애 나 초딩희연<br>
+                                나만의 홈피 갖고파<br>
+                                머 30만원? 않헤.
+                            </div>
+                            <img src="../JangHiyeon/img/003-baby-girl.png" alt="">
+                            <p>(관둠)
+                        </li>
+                        <li>
+                            <time>2018</time>
+                            <div class="balloon">
+                                대학 어디가지?<br>
+                                게임 좋아하니까<br>
+                                컴공 가야지~
+                            </div>
+                            <img src="../JangHiyeon/img/003-thinking.png" alt="">
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            <time>2019</time>
+                            <div class="balloon">
+                                에드삭? 엥 이걸 왜배워?<br>
+                                이게모지?노잼..<br>
+                                (드르렁)
+                            </div>
+                            <img src="../JangHiyeon/img/001-sleeping.png" alt="">
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            <time>2020</time>
+                            <div class="balloon" >
+                                ~따로 CS공부 중~<br>
+                                인강 쌤이 잘 가르쳐주시네?<br>
+                                재밌는 거였네?
+                            </div>
+                            <img src="../JangHiyeon/img/004-proud.png" alt="">
+                            <br>
+                            <br>
+                        </li>
+                        <li >
+                            <time> <a name="future"></a>2021</time>
+                            <div class="balloon3">
+                                ~국비 수업~<br>
+                                & 알바(사람이 싫어짐)<br>
+                                =>컴터가 좋아짐
+                            </div>
+                            <img src="../JangHiyeon/img/002-crying.png" alt="">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="balloon2">
+                                Javascript 라이브러리 사용해보기
+                            </div>
+                            <div class="balloon2">
+                                framework 사용해보기<br>
+                                (react - bootstrap)
+                            </div>
+                            <div class="balloon2">
+                               혼자 Mini project 하기
+                            </div>
+                            <img id="comcat" src="../JangHiyeon/img/kitty.png" alt="">
+                            <br>
+                            <br><br><br>
+                        </li>
+                        <li>
+                            <time>2022</time>
+                            <div class="balloon2">
+                                취업준비
+                                & 정처기 취득
+                            </div>
+                            <div class="balloon2">
+                                코테 공부
+                            </div>
+                        </li>
+                        <li>
+                            <div class="balloon2">
+                                취업
+                                <br>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </article>
+            </div>
+            <!-- 사이드바 -->
+            <aside>
+                
+                <div id="aside-color2">
+                    <a href="#past">
+                        <p>Past</p>
+                    </a>
+                </div>
+                <div id="aside-color4">
+                    <a href="#future">
+                        <p>Future</p>
+                    </a>
+                </div>
+                
+            </aside>
+        </div>
+    </section>
+    <section class="login_join container">
+        <div class="info-box login_join">
+            <div class="login_join-content">
+                <article class="login_join-text">
+                        <div class="login">
+                            <h1>LOGIN</h1>
+                            <i class="fas fa-paw"></i>
+                            <table>
+                                <tr>
+                                    <th>ID</th>
+                                    <td>
+                                        <div id="login1">
+                                            <input type="text" id="loginId" placeholder="id">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Password</th>
+                                    <td>
+                                        <div id="login2">
+                                            <input type="text" id="inputPassword" placeholder="password">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <form action="" class="loginbutton loginbutton">
+                                            <input type="submit" id="loginbtn" value="Login">
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="join">
+                            <h1>JOIN</h1>
+                            <i class="fas fa-paw"></i>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>
+                                        <div id="joinName">
+                                            <input type="text" id="name" placeholder="name">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ID</th>
+                                    <td>
+                                        <div id="join1">
+                                            <input type="text" id="id" placeholder="id">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Password</th>
+                                    <td>
+                                        <div id="join2">
+                                            <input type="text" id="password" placeholder="password">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>E-Mail</th>
+                                    <td>
+                                        <div id="joinEmail">
+                                            <input type="text" id="email" placeholder="email">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <td colspan="2" class="btn-wrapper">
+                                    <form action="javascript:alert('회원가입 완료!');" class="inbutton">
+                                        <input type="submit" id="joinbtn" value="JOIN">
+                                    </form>
+                                    <form action="" class="Clearbutton">
+                                        <input type="submit" id="clearbtn" value="localstorage clear">
+                                    </form>
+                                </td>
+                            </table>
+                            <hr>
+                            <h1>Foot print</h1>
+                            <i class="fas fa-paw"></i>
+                            <form action="javascript:saveGuestbook();" name="guestbookFrm">
+                              <fieldset>
+                                <table>
+                                  <tr>
+                                    <th><label for="username">Name</label></th>
+                                    <td>
+                                      <input type="text" name="username" id="username">
+                                    </td>
+                                  </tr>
+                                  <!-- tr>th>label^td>input -->
+                                  <tr>
+                                    <th><label for="content">Content</label></th>
+                                    <td><input type="text" name="content" id="content"></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" style="text-align:center;">
+                                      <button id="writebtn">Write</button>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </fieldset>
+                            </form>
+                            <table id="tb-guestbook">
+                              <thead>
+                                <tr>
+                                  <th>순번</th>
+                                  <th>이름</th>
+                                  <th>내용</th>
+                                  <th>작성일시</th>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                        </div>
+                    </article>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <ul>
+            <li><a href="https://www.instagram.com/h0me_l/"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="https://github.com/p5na9/homepage_project/tree/main"><i class="fab fa-github"></i> Github</a></li>
+            <br>
+            <span>Contact me!</span>
+        </ul>
+    </footer>
+    </div>
+    <script src="../JangHiyeon/js/jquery-3.6.0.js"></script>
+    <script src="../JangHiyeon/js/01_home.js"></script>
+    <script src="../JangHiyeon/js/02_join.js"></script>
+    <script src="../JangHiyeon/js/03_login.js"></script>
+    <script src="../JangHiyeon/js/04_guestBook.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+    <!-- https://michalsnik.github.io/aos/ -->
+</body>
+
+</html>

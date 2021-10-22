@@ -1,0 +1,122 @@
+
+
+.roadMap ul, li{
+  list-style: none;
+  padding: 0;
+}
+
+.sessions{
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+.roadMap li{
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 100px;
+}
+.roadMap li:last-child{
+  border: 0px;
+  padding-bottom: 0;
+}
+.roadMap li:before{
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+time{
+  color: #2a2839;
+  font-weight: 500;
+
+}
+
+.sessions{
+    text-align: left;
+}
+.sessions img{
+    position: absolute;
+    left: 100px;
+}
+time{
+    font-size: 1.3rem;
+}
+
+.roadMap aside{
+  width: 10%;
+  position: fixed;
+  height: 44%;
+  top: 300px;
+  right: 70px;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+#comcat{
+  width: 30%;
+}
+
+/* 말풍선 */
+.balloon {  
+    position: relative;
+    margin: 20px;
+    width: 60%;
+    height: 20%;
+    background: pink;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    padding: 10px;
+   }
+   .balloon:after { 
+    border-top: 10px solid pink;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 150px;  
+   }
+
+   .balloon2 {  
+    position: relative;
+    margin: 20px;
+    width: 60%;
+    height: 20%;
+    background: #ddf;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    padding: 10px;
+   }
+   .balloon2:after { 
+    border-top: 10px solid #ddf;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 150px;  
+   }
+   .balloon3 {  
+    position: relative;
+    margin: 20px;
+    width: 60%;
+    height: 20%;
+    background: linear-gradient(pink, #ddf);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    padding: 10px;
+   }
